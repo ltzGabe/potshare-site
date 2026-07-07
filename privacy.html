@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Potshare</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a2419; background: #f8f5ef;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; }
+  header a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #0e7c66; font-weight: 700; }
+  h1 { font-size: 28px; letter-spacing: -0.4px; margin: 24px 0 6px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; letter-spacing: -0.2px; }
+  h3 { font-size: 15px; margin: 20px 0 4px; }
+  p, li { color: #303a2e; }
+  a { color: #0e7c66; }
+  ul { padding-left: 20px; }
+  li { margin: 4px 0; }
+  em { color: #6b756a; font-style: normal; font-size: 14px; }
+  hr { border: 0; border-top: 1px solid #e2ddd2; margin: 32px 0; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e2ddd2; font-size: 13px; color: #6b756a; }
+  footer a { color: #6b756a; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e7ede6; background: #101810; }
+    p, li { color: #c3ccc0; }
+    h1, h2, h3 { color: #e7ede6; }
+    hr, footer { border-color: #24301f; }
+    em, footer, footer a { color: #8a9487; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a href="index.html">🪴 Potshare</a></header>
+    <h1>Privacy Policy — Potshare</h1>
+<p><em>Last updated: 7 July 2026</em></p>
+<p>This policy describes what data Potshare collects, how it is used, and the choices you have. It applies to the Potshare mobile app for iOS.</p>
+<h2>TL;DR</h2>
+<ul><li>Guest data stays <strong>only on your device</strong>. We don't see it.</li><li>If you sign in, your goals sync to our servers via Supabase, including on the free tier.</li><li>If you use <strong>together pots</strong> (shared goals), the people you invite can see that goal's name, targets, members, and savings history.</li><li>If you opt in, we use anonymous analytics (PostHog) to understand how the app is used and fix bugs.</li><li>We never sell your data. There are no advertisers.</li><li>You can export or delete your data at any time, no questions asked.</li></ul>
+<h2>1. Who is the data controller?</h2>
+<p>Potshare is operated by Gabriel Olatunji-Ojo ("we", "us"). Contact: support@potshare.app.</p>
+<h2>2. What we collect</h2>
+<h3>2.1 Data you give us</h3>
+<ul><li><strong>Goal data:</strong> names, target amounts, deadlines, contribution history, optional emoji and notes you add to a payment. Stored locally; synced to our servers only if you sign in.</li><li><strong>Account info (signed-in users only):</strong> your email address and the user identifier provided by Apple, Google, or Supabase Auth. We do <strong>not</strong> receive your Apple ID or Google password, bank credentials, or payment-card details.</li><li><strong>Profile (optional):</strong> display name, @username, and an avatar image if you upload one. Other Potshare users can see this so they know who they're saving with — that's the point.</li><li><strong>Together pot data:</strong> members of a shared goal can see the goal's name, target, deadline, member list, per-person contribution history, allocation shares, chat messages, and reactions to payments. Invite codes are stored so people you share them with can join.</li><li><strong>Friends graph:</strong> the friend requests you send/receive and the friendships that result. Each side of a friendship can see they're friends with the other.</li><li><strong>Reports:</strong> if you report a user or a message, we store the report, the reason you chose, a snapshot of the reported content, and your account identifier, so our moderation team can review it.</li><li><strong>Feedback:</strong> if you submit feedback or a bug report, we receive your message, the app version, your platform (iOS), and your email if you've chosen to include it for follow-up.</li></ul>
+<h3>2.2 Data collected automatically</h3>
+<ul><li><strong>Optional anonymous usage events</strong> via PostHog, when you enable analytics: which screens are opened, which actions are taken (e.g. "goal_created", "PaywallShown"), device type, OS version and app version. We do <strong>not</strong> collect contents of your goals, names, amounts, member identities, or any free-text input.</li><li><strong>Reminders &amp; notifications:</strong> scheduled and delivered locally on your device. No reminder content is sent through our servers.</li><li><strong>Purchase data (Pro customers):</strong> purchase status and entitlements via RevenueCat. We do not see your card details — these are handled by Apple.</li></ul>
+<h3>2.3 Data accessed on your device but NOT uploaded</h3>
+<ul><li><strong>Contacts:</strong> if you tap "Sync contacts" we ask iOS for permission and read your contact list on-device so you can pick people to invite. <strong>Nothing is uploaded to our servers</strong> — we don't store, match, or transmit your contact data. A copy is cached on your device so the list re-opens quickly; you can clear it by clearing app data.</li><li><strong>Photos:</strong> only the image you explicitly pick when changing your avatar. The picker shows you the image first; only that one image is uploaded to our avatar storage.</li><li><strong>Location:</strong> if you tap "use my location" when adding a savings account, we use your device location once, on-device, to detect your country and show the right banks. Your coordinates are not stored or uploaded.</li></ul>
+<h3>2.4 Data we do NOT collect</h3>
+<ul><li>Your bank, account numbers, transactions, or balances. Potshare has no connection to any financial institution.</li><li>Background location, your microphone, or your camera roll at large.</li></ul>
+<h2>3. Where data is stored</h2>
+<ul><li><strong>Local data</strong> stays on your device.</li><li><strong>Synced data</strong> (signed-in users) is stored in Supabase, hosted in the EU (eu-central-1). Encrypted in transit (TLS) and at rest.</li><li><strong>Avatar images</strong> are stored in Supabase Storage with public read access — anyone with the URL can view your avatar, the same as a profile picture on any social app.</li><li><strong>Analytics events</strong> are sent to PostHog (EU region).</li><li><strong>Purchase entitlement</strong> is processed by RevenueCat and the App Store.</li><li><strong>Bank logos</strong> shown in the accounts feature are fetched from third-party logo services (Brandfetch / logo.dev) by the bank's public web domain. This does not include any of your personal or financial data.</li></ul>
+<h2>4. Legal basis (UK GDPR / EU GDPR)</h2>
+<ul><li>Account, goal sync, friends graph &amp; together pots: <strong>performance of a contract</strong> (delivering the service you signed up for).</li><li>Reports &amp; safety: <strong>legitimate interests</strong> (keeping the service safe and complying with platform safety rules).</li><li>Analytics: <strong>consent</strong>. It is off by default and can be enabled or disabled in Settings → Privacy.</li><li>Feedback: <strong>consent</strong>, which you give by submitting it.</li></ul>
+<h2>5. Sharing</h2>
+<p>We do not sell your data. We share it only with the following processors, strictly to operate the app:</p>
+<ul><li><strong>Supabase</strong> (database, authentication, file storage)</li><li><strong>PostHog</strong> (anonymous analytics)</li><li><strong>RevenueCat</strong> (purchase entitlement management)</li><li><strong>Apple</strong> (sign-in, payments, push delivery)</li></ul>
+<p>Each is bound by their own data-processing terms.</p>
+<p>When you add someone to a together pot, the data covered in §2.1 ("Together pot data") becomes visible to them inside Potshare. They can also see your display name, @username, and avatar via your public profile.</p>
+<h2>6. Retention</h2>
+<ul><li>Goal data: kept for as long as your account is active. If you sign out without deleting your account, synced data stays on our servers; local data remains on your device until you clear it.</li><li>Together pot data: kept while the goal exists. Leaving a pot removes you from the member list, but payments you logged remain attributed to you in the goal's history (so the rest of the group's totals stay correct).</li><li>Friendships: kept until either side removes the friendship.</li><li>Reports: retained for up to 24 months to support moderation and repeat-abuse detection.</li><li>Invite codes: expire after 7 days, or when revoked, or when used.</li><li>Account: deleted when you confirm deletion in the app. This wipes your profile, owned goals, memberships in together pots, and friend graph entries.</li><li>Analytics events: retained for up to 12 months.</li><li>Feedback: retained for up to 24 months so we can follow up.</li></ul>
+<h2>7. Your rights</h2>
+<p>You can:</p>
+<ul><li><strong>Export</strong> your data at any time (Settings → Data → Export).</li><li><strong>Delete</strong> all local data (Settings → Data → Clear all data).</li><li><strong>Delete</strong> your account and synced data (Settings → Account → Delete account, or email us).</li><li><strong>Leave</strong> any together pot you're a member of (open the pot → Leave goal).</li><li><strong>Remove</strong> any friend (Friends list → swipe → Remove).</li><li><strong>Block or report</strong> any user (open their profile), or report a message (press and hold it).</li><li><strong>Revoke</strong> an invite code you've shared (open the pot → Add people → Revoke code).</li><li><strong>Opt out</strong> of analytics (Settings → Privacy → Analytics).</li><li><strong>Request a copy</strong> of any data we hold about you, or correct it, by emailing us.</li></ul>
+<p>You can also lodge a complaint with the UK Information Commissioner's Office (ICO) or your local data-protection authority.</p>
+<h2>8. Children</h2>
+<p>Potshare is not directed at children under 13 (or 16 in the EU/UK). We do not knowingly collect data from children.</p>
+<h2>9. Changes to this policy</h2>
+<p>We will update this page when the policy changes. Significant changes will be highlighted in-app.</p>
+<h2>10. Contact</h2>
+<p>Questions, requests, or complaints: support@potshare.app.</p>
+    <footer>
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a> · <a href="mailto:support@potshare.app">support@potshare.app</a>
+    </footer>
+  </div>
+</body>
+</html>
